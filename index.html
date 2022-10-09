@@ -10,33 +10,57 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script>
       // https://www.freecodecamp.org/news/how-to-build-a-dark-mode-switcher-with-tailwind-css-and-flowbite
       if (
-        localStorage.getItem('color-theme') === 'dark' ||
-        (!('color-theme' in localStorage) &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
+        localStorage.getItem("color-theme") === "dark" ||
+        (!("color-theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
-        document.documentElement.classList.add('dark')
+        document.documentElement.classList.add("dark");
       } else {
-        document.documentElement.classList.remove('dark')
+        document.documentElement.classList.remove("dark");
       }
     </script>
     <script src="js/script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <title>Farzana</title>
-    <link rel="icon" type="image/x-icon" href="/images/icon.png">
-    
+    <link rel="icon" type="image/x-icon" href="/images/icon.png" />
   </head>
   <body class="dark:bg-darkBlue dark:text-white font-opensans">
     <!-- Header -->
     <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
       <!-- Dynamic Logo -->
-      <div
-      class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"
-    ></div>
+      <!-- <div
+      class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-200 w-full mx-auto md:mx-0 md:absolute top-10 left-10"
+    ></div> -->
+      <div>
+        <img
+          src="images/light.svg#svgView(viewBox(300, 200, 500, 500))"
+          style="width: 200px"
+          class="dark:hidden bg-no-repeat mx-auto md:mx-0 md:absolute top-5 left-10"
+          alt=""
+        />
+        <img
+          src="images/dark.svg#svgView(viewBox(300, 200, 500, 500))"
+          style="width: 200px"
+          class="hidden dark:block bg-no-repeat mx-auto md:mx-0 md:absolute top-5 left-10"
+          alt=""
+        />
+      </div>
       <!-- Menu -->
       <div
         class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10"
@@ -88,14 +112,20 @@
     >
       <!-- Hero Container -->
       <div class="container mx-auto px-6 text-center md:pt-20 pb-52">
-        <img src="images/Avatar.png" alt="" style="width:28%" class="mx-auto rounded-full ring-2 ring-gray-300 dark:ring-gray-500" />
+        <img
+          src="images/Avatar.png"
+          alt=""
+          style="width: 28%"
+          class="mx-auto rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+        />
         <h1
           class="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl"
         >
-          Hey there! I'm Farzana 🙋🏽‍♀️ 
+          Hey there! I'm Farzana Kabir Odri 🙋🏽‍♀️
         </h1>
         <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur facere cupiditate nemo eius, quo nostrum soluta voluptatibus vitae. Quisquam, quod?
+          I dabble in web design, teach chemistry and aspire to be a data
+          analyst.
         </p>
         <button class="p-3 rounded-full w-52 bg-accentCyan hover:scale-95">
           <i class="fa-brands fa-github"></i> Github
@@ -103,18 +133,16 @@
       </div>
     </section>
 
-
-
     <!-- About Heading -->
-    <section id="about" class=" bg-gray-50 dark:bg-darkBlue1">
-      <div class="container mx-auto mt-0 mt-16 px-6">
+    <section id="about" class="bg-gray-50 dark:bg-darkBlue1">
+      <div class="container mx-auto mt-0 px-6">
         <h2 class="mb-6 text-4xl font-semibold text-center">About</h2>
         <p class="max-w-md mx-auto text-center text-grayishBlue">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum reiciendis molestias! Nesciunt nostrum cum, error quo veniam doloribus voluptate.
+          A little about my career aspirations, studies and WIL experiences that
+          will help me in my career
         </p>
       </div>
     </section>
-
 
     <!-- Features Section -->
     <section id="about" class="pt-12 bg-gray-50 dark:bg-darkBlue1">
@@ -125,23 +153,70 @@
           class="flex flex-col space-y-24 text-center md:flex-row md:space-y-0"
         >
           <!-- Item 1 -->
-          <div class="flex flex-col items-center space-y-2 md:w-1/2">
+          <div class="flex flex-col items-center space-y-2 mt-3 md:w-1/2">
             <div class="flex items-center justify-center h-24 mb-6">
-              <img src="images/icon-access-anywhere.svg" alt="" />
+              <img
+                src="images/interview.svg"
+                style="height: 200px; width: 200px"
+                alt=""
+              />
             </div>
-            <h3 class="text-xl font-bold">Career Goals</h3>
+            <h3 class="text-xl font-bold">Career Goals + WIL Experience</h3>
             <p class="max-w-md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis iure sint incidunt tempora assumenda obcaecati voluptatum suscipit consectetur accusantium ut, animi, recusandae dolorum nostrum! Eligendi in odio quam, harum maiores quasi quos ipsa architecto odit corrupti at, accusantium distinctio explicabo voluptate assumenda, dolorem fugit! Enim atque sit minus eum illum iusto! Temporibus, corrupti molestiae facilis magnam impedit earum voluptatem dolorum magni, aspernatur hic iste aut neque ipsam odio? Alias consectetur sunt tenetur reiciendis quia, quaerat commodi molestias placeat ex facilis voluptas animi ab. Voluptate officia, et cumque debitis saepe quidem. Est, officiis harum magni dignissimos fugit veritatis quaerat voluptatum voluptates! Laborum adipisci voluptates distinctio doloribus tenetur reprehenderit deleniti explicabo optio autem hic quo eius, repudiandae porro, vitae officia non, repellendus quae eligendi ullam cum velit fugit. Similique, ratione quia eum quidem a dolores fugiat porro tempore esse, dolore delectus qui temporibus pariatur neque ut itaque non rem animi cumque expedita?
+              After graduation, I intend to work as a data analyst, with the end
+              goal of being a data scientist. Working as a data analyst will
+              solidify the foundations needed to become a data scientist. A data
+              scientist demands expertise in data analytics, mathematical
+              literacy, knowledge of algorithms, and complex problem-solving
+              skills in various domains. My WIL placement exposed me to new
+              branches of mathematics (e.g., interval arithmetic), put my
+              problem-solving skills to practice, and required the application
+              of data analytics techniques with the understanding of algorithms
+              being an essential skill. I learnt to be a lifelong learner
+              through independent research and increased my breadth and depth of
+              knowledge by partaking in the WIL placement. The WIL placement
+              mimics the job scope of a data scientist by posing me with a
+              challenging problem with no existing solution. Working with the
+              industry partner has been a fun, enriching process and he taught
+              me the importance of communication and collaboration. The
+              placement has inspired me to embark on self-initiated projects
+              where I explore existing optimisation problems in IT (e.g.,
+              Knapsack problem). I believe in upskilling and constantly
+              improving, and thus I have crafted my learning plan after
+              graduation to differentiate myself from competitors. The WIL
+              placement showed me my strengths and weaknesses, and the
+              reflective process has made me self-actualise - I learnt what will
+              fulfil me career-wise and personally. I will improve on soft and
+              technical skills to prepare for the workplace.
             </p>
           </div>
           <!-- Item 2 -->
           <div class="flex flex-col items-center space-y-2 md:w-1/2">
             <div class="flex items-center justify-center h-24 mb-6">
-              <img src="images/icon-security.svg" alt="" />
+              <img
+                src="images/datareport.svg"
+                style="height: 200px; width: 200px"
+                alt=""
+              />
             </div>
-            <h3 class="text-xl font-bold">Area of Study</h3>
+            <h3 class="text-xl font-bold">Data Analytics Specialization</h3>
             <p class="max-w-md">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aut illum, quam error illo a repudiandae quasi nihil assumenda sapiente fugiat! Sunt consequuntur sit quidem ullam a voluptatum similique, consectetur dicta aspernatur, fugiat laborum maiores repellendus vitae officia, facilis ex rem esse obcaecati doloribus corrupti dolor nemo. Nemo distinctio labore cupiditate officiis incidunt placeat quidem ad dolorum, asperiores facere. Quis voluptas vel optio nisi laboriosam, enim natus error cupiditate, libero consequuntur veniam adipisci tenetur. Vero delectus tempore unde ad asperiores explicabo reiciendis quaerat architecto, quis deleniti atque iste aspernatur harum enim fuga cum obcaecati quam placeat, omnis cumque quibusdam corrupti labore totam eaque? Aut error temporibus distinctio deserunt ea eius neque accusamus molestias necessitatibus natus! Magnam asperiores libero, quos accusantium obcaecati quibusdam magni quasi nihil vero possimus? Veritatis quaerat soluta est illo possimus eligendi itaque. Itaque, dignissimos quis. Nihil velit debitis esse incidunt eveniet. Adipisci nostrum deserunt tenetur provident aspernatur!
+              I am completing my master’s in information technology with a
+              specialisation in Data Analytics. I garnered interest in data
+              analytics and data science due to the need for analysing data,
+              visualising results, and applying mathematics. I am most
+              passionate about deciphering data to obtain insights and create
+              beautiful visualisations. My master’s taught me core data
+              analytics skills – coding in popular languages (R, python),
+              visualisation tools, and methods to find meaning in data. I have
+              completed several data analysis projects and applied IT project
+              lifecycle skills. Apart from technical skills, I had to learn key
+              business terms to align my insights with business goals and
+              communicate them to a diverse audience. Besides analytics, I have
+              always been fond of mathematics. Although implicit, I had
+              opportunities to improve mathematical literacy through coursework.
+              Overall, the master's course has taught me the intricacies of the
+              IT field, and the scope of knowledge to gain.
             </p>
           </div>
         </div>
@@ -153,7 +228,9 @@
       <div class="container mx-auto mt-3 mt-16 px-6">
         <h2 class="mb-6 text-4xl font-semibold text-center pt-7">WIL</h2>
         <p class="max-w-md mx-auto text-center text-grayishBlue">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum reiciendis molestias! Nesciunt nostrum cum, error quo veniam doloribus voluptate.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum
+          reiciendis molestias! Nesciunt nostrum cum, error quo veniam doloribus
+          voluptate.
         </p>
       </div>
     </section>
@@ -165,76 +242,129 @@
       >
         <!-- Image -->
         <div class="w-1/2">
-          <img
-            src="images/illustration-stay-productive.png"
-            alt=""
-            class="mb-10"
-          />
+          <img src="images/teamwork.svg" alt="" class="mb-10" />
         </div>
         <!-- Content -->
         <div class="flex flex-col items-start md:w-1/2">
           <div class="flex flex-col space-y-5">
             <h6 class="max-w-md text-2xl font-bold md:text-3xl">
-              Heading1
+              Knowing when to be independent
             </h6>
             <p class="text-md md:text-lg">
-              Never let location be an issue when accessing your files. Fylo has
-              you covered for all of your file storage needs.
+              My placement supervisor instructed me to read one academic paper
+              to understand the problem context and explore interval arithmetic
+              using Python. Initially, I felt motivated and responsible for
+              structuring my learning process as no detailed content structure
+              was provided, unlike in other courses. I self-studied algorithms,
+              delved into mathematics and read academic papers related to my
+              placement topic. I felt overwhelmed and incompetent as my existing
+              knowledge and skills were inadequate to understand parts of the
+              project. However, after talking with my placement supervisor, I
+              understood that it is natural to lack some technical skills and
+              knowledge at the commencement of a job. While learning new things
+              will always be a part of any new job, I have learnt the necessity
+              of focusing on essential points with sufficient depth and breadth
+              without delving deep into everything. To improve my ability to
+              plan learning tasks without going off-course, I will practice
+              using notetaking and task management software like Notion to list
+              the skills and knowledge needed, followed by a course of action to
+              complete these tasks. This way, I can have an overview of what I
+              have learnt and the remaining gaps in knowledge that needs
+              addressing without getting side-tracked.
             </p>
 
             <p class="text-md md:text-lg">
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
+              When I did not understand the method to apply interval arithmetic,
+              I kept on researching on the Internet to find answers. I felt
+              obligated to be an independent learner, who must decipher and
+              solve problems with minimal guidance. I learnt that I had a
+              misconception – that asking for assistance undermines my ability
+              to conduct tasks assigned to me and makes me reliant. My
+              reluctance to ask my supervisor questions due to a desire to be
+              independent hindered the progress of my placement by several
+              weeks. When I finally communicated my struggles to my placement
+              supervisor, his response made me realise that mentors are willing
+              to assist and share their knowledge. Moving forward, as I start my
+              career in IT, I shall ask teammates and supervisors questions,
+              when necessary, instead of “suffering silently” and wasting time
+              on futile attempts. In any workplace, I will face strict deadlines
+              to produce deliverables to circumvent financial penalties. Hence,
+              I must not hesitate to seek help merely because I wish to prove my
+              independence. I have learnt that there must be a balance between
+              communicating my struggles to someone who can assist me, with
+              being proactive in learning on my own. Additionally, knowing how
+              to communicate these needs is a crucial skill, as asking vague
+              questions will cause miscommunication.
             </p>
           </div>
-
-          
         </div>
-        
       </div>
 
       <div
         class="container mt-0 pt-0 flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row-reverse md:space-x-16"
       >
-      <!-- Image -->
-      <div class="w-1/2">
-        <img
-          src="images/illustration-stay-productive.png"
-          alt=""
-          class="mb-10"
-        />
-      </div>
-        
+        <!-- Image -->
+        <div class="w-1/2">
+          <img src="images/rocket.svg" alt="" class="mb-10 ml-3" />
+        </div>
+
         <!-- Content -->
         <div class="flex flex-col items-start md:w-1/2">
           <div class="flex flex-col space-y-5">
             <h6 class="max-w-md text-2xl font-bold md:text-3xl">
-              Heading2
+              Niche field problems
             </h6>
             <p class="text-md md:text-lg">
-              Never let location be an issue when accessing your files. Fylo has
-              you covered for all of your file storage needs.
-            </p>
-
-            <p class="text-md md:text-lg">
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
+              The most surprising insight I gained is how important it is to
+              learn from field experts about topics less explored. I have long
+              held the belief that in the field of IT, everything there is to
+              know is well-documented on the Internet and a simple Google search
+              will give me an influx of relevant information. When I searched
+              for Interval Arithmetic libraries and their applications, I did
+              find several options. However, as I explored these libraries, it
+              became evident to me that some of them are underdeveloped, not
+              maintained or irrelevant, given how uncommon it is to use in
+              coding in the context of my placement goals. This challenged my
+              assumptions and made me aware of my reliance on the Internet as
+              the only source of knowledge. My supervisor suggested I explore
+              PyIbex (python library) which did not appear in the top 10 pages
+              of my Google search results. I was surprised that PyIbex did not
+              appear as a top search, but my supervisor was aware of its
+              existence and relevance. I learnt that years of experience and
+              exposure gave him knowledge and insight that I cannot gain by
+              doing simple Internet searches and reading. This realisation
+              opened my eyes to the option of using my supervisor’s experience
+              as a crucial source of relevant information, as self-exploration
+              on the Internet will not always provide me with the exact
+              information I need in a reasonable timeframe. In future jobs, I
+              will ask field experts or experienced mentors appropriate
+              questions to help speed up my learning process. During meetings
+              with the supervisor, I listened to his explanations and did not
+              know what questions to ask to maximise my time with him. After the
+              meeting, I realised I did have questions but felt doubtful about
+              the quality of my questions and thus, was hesitant to ask. I shall
+              learn to plan for meetings with a list of questions and how to
+              record information conveyed to me. I learnt that it is not a
+              viable option to expect experts to spend time explaining in
+              detail, so asking the right questions is a valuable skill I intend
+              to polish. I intend to read books (e.g., “The Art of Asking” by
+              Terry Fadem) and articles on asking questions during meetings to
+              gain this skill.
             </p>
           </div>
-
-          
         </div>
-        
-        
       </div>
     </section>
 
     <!-- Skills Heading -->
-    <section id="skills">
-      <div class="container mx-auto mt-3 mt-16 px-6 bg-gray-50 dark:bg-darkBlue1">
-        <h2 class="mb-6 text-4xl font-semibold text-center pt-7">Skills</h2>
+    <section id="skills" class="bg-gray-50 dark:bg-darkBlue1">
+      <div class="container mx-auto mt-3 px-6">
+        <h2 class="mb-6 text-4xl font-semibold text-center pt-7">
+          Technical & Transferable Skills
+        </h2>
         <p class="max-w-md mx-auto text-center text-grayishBlue">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum reiciendis molestias! Nesciunt nostrum cum, error quo veniam doloribus voluptate.
+          Here I reflect on the technical and transferable skills I developed
+          and improved through the WIL placement
         </p>
       </div>
     </section>
@@ -246,76 +376,148 @@
       >
         <!-- Image -->
         <div class="w-1/2">
-          <img
-            src="images/illustration-stay-productive.png"
-            alt=""
-            class="mb-10"
-          />
+          <img src="images/maths.svg" alt="" class="mb-10" />
         </div>
         <!-- Content -->
         <div class="flex flex-col items-start md:w-1/2">
           <div class="flex flex-col space-y-5">
             <h6 class="max-w-md text-2xl font-bold md:text-3xl">
-              Heading1
+              Algorithm Construction + Mathematics
             </h6>
             <p class="text-md md:text-lg">
-              Never let location be an issue when accessing your files. Fylo has
-              you covered for all of your file storage needs.
+              I was offered the placement by Dr Yong Wu as I had experience with
+              a relevant coding language (python), data analysis and machine
+              learning. I was required to work on validating optimisation
+              solution for a packing problem by using/creating an appropriate
+              algorithm. I accepted the placement as I had an opportunity to
+              practice these skills and learn additional technical skills. Prior
+              to the placement, I had knowledge of some algorithm types,
+              primarily sorting algorithms. The algorithm needed in this
+              placement was a search algorithm. My placement supervisor told me
+              to learn about Branch and Bound algorithm (B&B) as it is most
+              relevant. While researching on the uses of B&B, I got exposure to
+              dynamic algorithms. I learnt that B&B is a merger of search and
+              dynamic algorithm. Overall, my knowledge of algorithm types and
+              uses has increased exponentially through reading and researching.
             </p>
 
             <p class="text-md md:text-lg">
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
+              When my placement supervisor told me to use B&B in the solution,
+              my approach was to find an existing B&B algorithm I could
+              implement on the packing problem I was given. I spent considerable
+              time searching existing libraries and attempting to implement it.
+              I then learnt that most of these B&B algorithms are created for
+              very specific use cases, unlike general-use algorithms (e.g.,
+              Support Vector Machine) that I had experience using. The skills I
+              had to apply were an extension of my prior knowledge, but very
+              different in execution. Previously, I had taken general-function
+              algorithm codes from existing libraries like Scikit-learn and
+              implemented them on large datasets. This meant a writing a few
+              lines of codes, with the focus being on processing data and
+              interpretation of results. The aim would be to obtain insights on
+              existing data. However, this placement needed me to create such an
+              algorithm and create data to test the algorithm. While both
+              situations dealt with algorithms and data, I found the process of
+              creating to be exponentially more complex than implementing. I
+              should have focused on learning about how algorithms are built,
+              instead of attempting to carry out the same techniques I had done
+              in other courses.
+            </p>
+
+            <p class="text-md md:text-lg">
+              The process of simulating the packing problem and creating dataset
+              was yet another challenge. I had to understand the properties of
+              circles and create mathematical equations to describe the packing
+              process. Data analytics does require various branches of
+              mathematics (e.g., statistics) in algorithms and discovering
+              insights from data. The improvement in mathematical literacy and
+              algorithm use will make me a better data analyst.
             </p>
           </div>
-
-          
         </div>
-        
       </div>
 
       <div
         class="container mt-0 pt-0 flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row-reverse md:space-x-16"
       >
-      <!-- Image -->
-      <div class="w-1/2">
-        <img
-          src="images/illustration-stay-productive.png"
-          alt=""
-          class="mb-10"
-        />
-      </div>
-        
+        <!-- Image -->
+        <div class="w-1/2">
+          <img src="images/coder.svg" alt="" class="mb-10" />
+        </div>
+
         <!-- Content -->
         <div class="flex flex-col items-start md:w-1/2">
           <div class="flex flex-col space-y-5">
             <h6 class="max-w-md text-2xl font-bold md:text-3xl">
-              Heading2
+              Coding skills: Python
             </h6>
             <p class="text-md md:text-lg">
-              Never let location be an issue when accessing your files. Fylo has
-              you covered for all of your file storage needs.
+              While algorithm-use and python programming are intertwined, since
+              algorithms can be written in Python language, the skills I needed
+              for each is quite different. To be able to implement the best
+              algorithm, the focus is on the results of implementation on
+              datasets, that translates to useful insights. The writing of codes
+              to implement algorithm is significantly simplified through
+              detailed codes description provided in libraries. Coding in this
+              context required me to be focused on the language syntax (e.g.,
+              debugging when I had errors). To be able to write programs well, I
+              needed to be methodological and translate logical processes (i.e.,
+              optimising packing circles problem) into lines of code with
+              correct syntax. I realised I could be good at implementing
+              algorithms without being as good at coding. However, coding skills
+              will make implementing algorithms an effortless process. This
+              challenged me as the one of the key tasks was to write codes for a
+              program.
             </p>
 
             <p class="text-md md:text-lg">
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
+              I proceeded to look at over 300 lines of code written for a
+              specific implementation of B&B algorithm. This was the most
+              eye-opening experience – I did not once think about the complexity
+              in coding logic of an algorithm, despite having used numerous
+              algorithms. While I had experience coding programs, they were
+              relatively simple tasks with singular functionality (e.g., a
+              program to calculate area based on user input). The logic of
+              algorithms considers numerous calculations and situations. I
+              obtained a skeletal of what my B&B coding logic should contain by
+              analysing the codes. Additionally, I had to re-read Python class
+              methods to understand and use it. Initially I found coding
+              challenging, but as I practiced writing, the syntax became more
+              intuitive. While I have become more comfortable and faster in
+              coding with Python, I recognise that more practice is needed to
+              master it. To gain confidence and versatility in my coding skills,
+              I shall practice coding to solve python problems (e.g., LeetCode
+              problems).
+            </p>
+            <p class="text-md md:text-lg">
+              <b
+                >Data analysis is the marriage of coding/using algorithms,
+                creating visualisations, handling data, numeric literacy and
+                possessing domain knowledge.</b
+              >
+              In the placement, I had to create an algorithm, create
+              visualisations, fabricate testing data, understand interval
+              arithmetic (mathematics) and lastly, understand the packing
+              problem (domain knowledge) to optimise it. Although I had not
+              successfully created the optimization algorithm, I had a chance to
+              practise many skills, which is the first step to being an
+              excellent data analyst.
             </p>
           </div>
-
-          
         </div>
-        
-        
       </div>
     </section>
 
     <!-- Experiences Heading -->
     <section id="experiences">
       <div class="container mx-auto mt-3 mt-16 px-6">
-        <h2 class="mb-6 text-4xl font-semibold text-center pt-7">Experiences</h2>
+        <h2 class="mb-6 text-4xl font-semibold text-center pt-7">
+          Experiences
+        </h2>
         <p class="max-w-md mx-auto text-center text-grayishBlue">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et dolorum reiciendis molestias! Nesciunt nostrum cum, error quo veniam doloribus voluptate.
+          A little about how I have been learning during my undergraduate and
+          postgraduate studies, and the travelling experiences that moulded me
+          into the person I am today.
         </p>
       </div>
     </section>
@@ -327,72 +529,160 @@
       >
         <!-- Image -->
         <div class="w-1/2">
-          <img
-            src="images/illustration-stay-productive.png"
-            alt=""
-            class="mb-10"
-          />
+          <img src="images/educator.svg" alt="" class="mb-10" />
         </div>
         <!-- Content -->
         <div class="flex flex-col items-start md:w-1/2">
           <div class="flex flex-col space-y-5">
             <h6 class="max-w-md text-2xl font-bold md:text-3xl">
-              Heading1
+              Master's vs Bachelor's
             </h6>
             <p class="text-md md:text-lg">
-              Never let location be an issue when accessing your files. Fylo has
-              you covered for all of your file storage needs.
+              For my bachelor’s degree, I studied chemistry out of interest in
+              the subject. During my undergraduate course, I gained a breadth of
+              knowledge on many subject matters. Additionally, I focused on
+              doing my assignments to obtain good grades and went through the
+              routine of attending classes without processing what it meant to
+              me in my career. After graduation, I realised that I wish to do
+              something that was not related to chemistry. I realised my
+              decision-making was flawed – choosing subject based on interests
+              and not as a career option.
             </p>
 
             <p class="text-md md:text-lg">
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
+              My motivation to do master’s degree is aligned with my career
+              plans of being an IT professional – a data analyst. I need to
+              master IT skills and doing my master’s degree meant I gain
+              expertise in a structured way. My shift in focus had been from
+              exploring various subjects, to mastering one. While not part of
+              the coursework, I have started reading articles and news on IT
+              field to stay updated. I learnt to be more practical in my
+              learning approach.
+            </p>
+            <p class="text-md md:text-lg">
+              Another change in my approach has been going from relying on
+              course materials as my main source of knowledge (during
+              bachelor’s), to doing my own research and independently learning
+              outside the course to supplement and consolidate my
+              skills/knowledge. I recognise that self-improvement means to be
+              proactive in learning from a variety of resources without being
+              instructed to do so. In my workplace, I would be required to learn
+              new languages, software, and analytical techniques, since there is
+              constant progress in the IT field. This ability to be resourceful
+              will help me constantly upgrade my knowledge/skillset to be a
+              better analyst and adapt to changes in the job market.
+            </p>
+            <h5 class="text-xl font-bold">Teamwork</h5>
+            <p class="text-md md:text-lg">
+              Projects in my undergraduate studies were simpler, and the teams
+              were bigger. The impact of each member’s contribution appeared
+              insignificant, and I found myself capable of doing the entire
+              project independently. However, the nature of team projects in
+              master’s program in IT have been technical, complex, and sometimes
+              tedious. Collaborating with each other in small teams of meant
+              greater workload for each member. The academic rigour of master’s
+              has emphasised to me the importance of task segregation and
+              communicating both struggles and progress. Furthermore, we
+              contributed our knowledge to the team by filling on one another’s
+              skills/knowledge gaps. I found that being older, the need to have
+              a team leader who takes charge over the project is less, while
+              during undergraduate, it helped give the team a sense of
+              direction. In master’s, everyone was a leader and self-directed.
+              My teammates in master’s programme are matured with many
+              commitments (e.g., work, children) and this is different from my
+              teammates in bachelor’s, who were full-time students and more
+              available. I learnt to be respectful of my teammates’ time as they
+              are busy. My experiences in group IT projects will allow me to
+              work on complicated tasks independently, but also communicate
+              struggles and update members on progress to complete group tasks
+              efficiently.
+            </p>
+            <h5 class="text-xl font-bold">Complex problem solving</h5>
+            <p class="text-md md:text-lg">
+              Projects during bachelor’s lacked real-life context applications
+              or problems. They were mainly theoretical with emphasis on
+              presentation skills. The projects done in master’s had greater
+              academic rigour and more complex with high-level thinking skills
+              being needed to solve – e.g., the WIL placement incorporated
+              mathematics, coding, and contextual understanding for building the
+              solution. To develop these problem-solving skills, I had to be an
+              independent learner who makes sound judgement and decisions.
+              Sometimes it took wrong approaches to learn the right ones, and
+              this increased the depth of my understanding and ability to solve
+              more efficiently. I will have to tackle complex problems in data
+              analysis domain, and issues unrelated to job tasks in the
+              workplace, making this an important skill.
             </p>
           </div>
-
-          
         </div>
-        
       </div>
 
       <div
         class="container mt-0 pt-0 flex flex-col items-center mx-auto px-6 pt-24 pb-32 md:flex-row-reverse md:space-x-16"
       >
-      <!-- Image -->
-      <div class="w-1/2">
-        <img
-          src="images/illustration-stay-productive.png"
-          alt=""
-          class="mb-10"
-        />
-      </div>
-        
+        <!-- Image -->
+        <div class="w-1/2">
+          <img src="images/departing.svg" alt="" class="mb-10" />
+        </div>
+
         <!-- Content -->
         <div class="flex flex-col items-start md:w-1/2">
           <div class="flex flex-col space-y-5">
-            <h6 class="max-w-md text-2xl font-bold md:text-3xl">
-              Heading2
-            </h6>
+            <h6 class="max-w-md text-2xl font-bold md:text-3xl">Travelling</h6>
             <p class="text-md md:text-lg">
-              Never let location be an issue when accessing your files. Fylo has
-              you covered for all of your file storage needs.
+              I have travelled to 25 countries, with solo travels in 18
+              countries. I would travel overseas for one to three months at a
+              time during my vacations. I had to research, plan, and prepare
+              extensively before the trips. I gained planning and time
+              management skills that I can apply to projects at work. The stakes
+              have been high (often financially) if I was late or had planned
+              something wrongly during travels. In a workplace, if I am late in
+              delivering results, there could be financial penalties too. During
+              travels, I had to manage my finances and make informed choices
+              (e.g., where to stay) to ensure the trip ran smoothly. Solo
+              travels taught me to be independent and manage every aspect of
+              life by myself. This sharpened my decision-making skills as I had
+              to weigh options every day. In a workplace, I must make informed
+              decisions independently and plan accordingly to deliver projects
+              timely.
             </p>
 
             <p class="text-md md:text-lg">
-              Securely share files and folders with friends, family and
-              colleagues for live collaboration. No email attachments required.
+              In unfamiliar places, events I did not plan for or anticipate
+              happened (e.g., train breakdown). I had to be comfortable with
+              uncertainty and prepared for the unexpected. I learnt to handle
+              difficult situations by myself by fine-tuning my judgments and
+              being quick-thinking while stressed. In a workplace,
+              stress/pressure would be inevitable, and my capability to make
+              decisions while stressed will allow me to cope in a crisis (e.g.,
+              a project failure). It taught me to be a risk-taker and forced me
+              out of my comfort zone. Sometimes at work, it is essential to be
+              willing to take calculated risks and explore.
+            </p>
+            <p class="text-md md:text-lg">
+              I met people of various cultures who did not speak a common
+              language. I had to communicate with them (e.g., asking for
+              directions). My social and communication skills improved as I
+              learnt to talk to strangers and understand them through verbal and
+              non-verbal methods (e.g., drawing maps to convey directions). I
+              discovered that understanding people goes beyond verbal
+              communication. My field is technical and non-IT personnel may not
+              understand my verbal explanations. I now appreciate the value of
+              conveying my data analytics results through visualisations.
+            </p>
+            <p class="text-md md:text-lg">
+              When I travelled with people, sometimes we had different
+              interests. I had to communicate my expectations and learn to make
+              compromises. I now understand that communication is vital to
+              prevent misunderstandings. At work, I must understand the project
+              deliverables by communicating with my teammates and clients,
+              ensuring the results align with the client’s expectations.
             </p>
           </div>
-
-          
         </div>
-        
-        
       </div>
     </section>
 
-    
-    
     <!-- Footer -->
     <footer class="bg-darkBlue2 text-white">
       <div class="container mx-auto pt-12 px-5 pb-10">
@@ -427,7 +717,6 @@
               <a href="#skills" class="mx-2">Skills</a>
               <a href="#experiences" class="mx-2">Experiences</a>
             </div>
-
           </div>
 
           <!-- Social -->
@@ -435,12 +724,12 @@
             <div>
               <a href="#">
                 <i class="fa-brands text-white fa-2xl fa-github"></i>
-            </a>
+              </a>
             </div>
             <div>
               <a href="#">
                 <i class="fa-brands text-white fa-2xl fa-linkedin"></i>
-            </a>
+              </a>
             </div>
           </div>
         </div>
